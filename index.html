@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serene Petalscape</title>
+    <title>Flower Chronicles</title>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;700&family=Great+Vibes&display=swap');
@@ -133,7 +133,7 @@
 <body>
     <div class="floating-flowers" id="floatingFlowers"></div>
 
-    <div id="welcome-screen">Flowersssss!!!!!!</div>
+    <div id="welcome-screen">Welcome to the World of Flowers </div>
     <div id="serene-screen">Serene Petalscape</div>
     <div id="main-content">
         <div class="menu-icon" onclick="openNav()">
@@ -144,10 +144,11 @@
         
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-            <a href="home.html">Home</a>
-            <a href="gallery.html">Gallery</a>
+            
+            <a href="whatflowerareyou.html">What Flower Are You?</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="findflowers.html">My favs</a>
         </div>
 
         <h1>Explore the magical world of flowers and their stories</h1>
@@ -155,7 +156,7 @@
     </div>
 
     <script>
-       
+        // The previous JavaScript remains the same as in the last version
         function createFlowerSVG(type) {
             const svgs = {
                 sakura: `
@@ -236,7 +237,7 @@
             }, 2000);
         }
 
-        // Adding floating animation keyframes
+        // Add floating animation keyframes
         const styleSheet = document.createElement('style');
         styleSheet.type = 'text/css';
         styleSheet.innerHTML = `
